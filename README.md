@@ -1,0 +1,1 @@
+# firewall-geral.sh
