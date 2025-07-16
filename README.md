@@ -19,3 +19,32 @@ Este script Bash configura um firewall robusto usando `nftables`, com:
 ```bash
 chmod +x firewall.sh
 sudo ./firewall.sh
+
+
+⚙️ Modo Interativo
+Detecta IP público e ASN automaticamente
+
+Coleta blocos IPv4/IPv6 via RDAP
+
+Permite entrada manual adicional de blocos CIDR e portas
+
+Gera regras robustas segmentadas por perfil: consultoria, gerência, cliente
+
+🧪 Modo Dry Run / Debug (em breve)
+--dry-run : executa sem aplicar regras no sistema
+
+--debug : exibe informações detalhadas de cada etapa
+
+🛡️ Segurança
+Backups automáticos com timestamp
+
+Proteções contra duplicatas, entradas inválidas e falhas de dependência
+
+Integração com systemctl e chattr para maior resiliência
+
+📁 Arquivos gerados
+/router-x/nft.ruleset → ruleset ativo
+
+/etc/nftables.conf → aponta para o ruleset
+
+Backups: /router-x/.nft.ruleset.YYYY-MM-DD_HH-MM-SS
