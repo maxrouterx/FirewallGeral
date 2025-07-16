@@ -48,3 +48,10 @@ Integração com systemctl e chattr para maior resiliência
 /etc/nftables.conf → aponta para o ruleset
 
 Backups: /router-x/.nft.ruleset.YYYY-MM-DD_HH-MM-SS
+```
+
+Feito por Max – Especialista em redes ISP 🇧🇷
+Script modular, expansível, com foco em robustez, clareza e automação.
+
+
+
