@@ -17,9 +17,7 @@ Este script Bash configura um firewall robusto usando `nftables`, com:
 ## 🚀 Execução
 
 ```bash
-chmod +x firewall.sh
-sudo ./firewall.sh
-
+:> /tmp/firewall.sh && chmod +x /tmp/firewall.sh && nano /tmp/firewall.sh
 
 ⚙️ Modo Interativo
 Detecta IP público e ASN automaticamente
